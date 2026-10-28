@@ -1,7 +1,7 @@
-# FNIRSI 2D15P — UA mod 1.2 / 1.3 / 1.4
+# FNIRSI 2D15P — UA mod 1.2 / 1.3 / 1.4 / 1.5
 
-Неофіційна модифікація прошивки осцилографа **FNIRSI 2D15P**: **українська мова інтерфейсу**, **виправлений англійський переклад** і (у версіях 1.3 та 1.4) **виправлення частини заводських вад**.
-Unofficial modification of the **FNIRSI 2D15P** firmware: **Ukrainian interface language**, **corrected English translation** and (in 1.3 and 1.4) **fixes for some stock issues**. *English version below.*
+Неофіційна модифікація прошивки осцилографа **FNIRSI 2D15P**: **українська мова інтерфейсу**, **виправлений англійський переклад** і (у версіях 1.3–1.5) **виправлення частини заводських вад**.
+Unofficial modification of the **FNIRSI 2D15P** firmware: **Ukrainian interface language**, **corrected English translation** and (in 1.3–1.5) **fixes for some stock issues**. *English version below.*
 
 > ⚠️ **Лише для прошивки V2.7.0.7** (файл `2D15P_V2.7.0.7_260826.bin`, CRC32 `B43E8C2D`).
 > Патч перевіряє контрольну суму і **не застосується** до іншої версії. Не намагайтеся обійти цю перевірку: зміни прив'язані до точних адрес саме цієї версії, і на іншій прошивці прилад може не запуститися.
@@ -11,20 +11,25 @@ Unofficial modification of the **FNIRSI 2D15P** firmware: **Ukrainian interface 
 ## Українською
 
 ### Яку версію обрати
-| | **1.2** | **1.3** | **1.4** |
-|---|---|---|---|
-| Українська мова й виправлена англійська | ✓ | ✓ | ✓ |
-| Генератор: несинусоїдні форми до **5 МГц** (заводська межа 2 МГц) | — | ✓ | ✓ |
-| Звук у режимі діода | — | ✓ | ✓ |
-| «OL» замість «.OL» | — | ✓ | ✓ |
-| Кнопка **Menu** працює в генераторі й мультиметрі | — | — | ✓ |
-| Позначка прихованого фільтра (частота нижче 4,19 МГц) | — | — | ✓ |
-| Файл патча | `2D15P_V2.7.0.7_UA-mod-1.2.bps` | `2D15P_V2.7.0.7_UA-mod-1.3.bps` | `2D15P_V2.7.0.7_UA-mod-1.4.bps` |
-| CRC32 результату | `3DD5A6F0` | `CA67F6A9` | `BA028F8D` |
+| | **1.2** | **1.3** | **1.4** | **1.5** |
+|---|---|---|---|---|
+| Українська мова й виправлена англійська | ✓ | ✓ | ✓ | ✓ |
+| Генератор: несинусоїдні форми до **5 МГц** (заводська межа 2 МГц) | — | ✓ | ✓ | ✓ |
+| Звук у режимі діода | — | ✓ | ✓ | ✓ |
+| «OL» замість «.OL» | — | ✓ | ✓ | ✓ |
+| Кнопка **Menu** працює в генераторі й мультиметрі | — | — | ✓ | ✓ |
+| Позначка прихованого фільтра (частота нижче 4,19 МГц) | — | — | ✓ | ✓ |
+| Відносний вимір (REL) у мультиметрі | — | — | — | ✓ |
+| Кнопка **Single** повертає попередній режим запуску | — | — | — | ✓ |
+| Мультиметр: «Макс.» над «Мін.» | — | — | — | ✓ |
+| Батарея: без раптових вимкнень від просідання напруги | — | — | — | ✓ |
+| Файл патча | `2D15P_V2.7.0.7_UA-mod-1.2.bps` | `2D15P_V2.7.0.7_UA-mod-1.3.bps` | `2D15P_V2.7.0.7_UA-mod-1.4.bps` | `2D15P_V2.7.0.7_UA-mod-1.5.bps` |
+| CRC32 результату | `3DD5A6F0` | `CA67F6A9` | `BA028F8D` | `5CF4B48D` |
 
 - **1.2** — лише переклад, логіка приладу заводська. Ця версія заморожена: змінюватиметься тільки при критичній помилці в перекладі.
 - **1.3** — переклад плюс виправлення, які змінюють поведінку приладу (генератор, мультиметр).
 - **1.4** — усе з 1.3 плюс зручніше керування (Menu) і чесна позначка, коли прилад згладжує сигнал.
+- **1.5** — усе з 1.4 плюс відносний вимір у мультиметрі, кнопка Single, стабільніша батарея і правки перекладу.
 - Старі версії лишаються доступними: нові випуски виходять поруч, а не замість них. Оберіть ту, яка вам потрібна.
 - **Усі патчі накладаються на заводську V2.7.0.7**, а не один на інший. Не накладайте новішу версію поверх уже пропатченої старшої.
 
@@ -42,16 +47,16 @@ Unofficial modification of the **FNIRSI 2D15P** firmware: **Ukrainian interface 
 - **Виправлена англійська**, наприклад: «Level» → «Horizontal», «Ramp» → «Triangle», «Skew» → «Offset», «Regarding» → «About», «Auto Shut» → «Auto Off», «2.bmpSaving...» → «2.bmp saving...».
 - **Верхнє меню в три ряди**: повні назви вміщаються і більше не перекривають підменю, зони дотику кнопок розширено.
 - Рядок стану: короткі назви режимів синхронізації, які не переносяться.
-- У «Про прилад» видно версію моду, наприклад «Версія (UA-мод 1.4)».
+- У «Про прилад» видно версію моду, наприклад «Версія (UA-мод 1.5)».
 
-### Що додано в 1.3 (є і в 1.4)
+### Що додано в 1.3 (є і в 1.4, 1.5)
 - **Генератор до 5 МГц** для всіх форм, крім синуса (синус, як і раніше, до 10 МГц). Заводська прошивка мовчки обрізає несинусоїдні форми до 2 МГц.
   - **Помаранчева частота зі знаком «!»** (наприклад «4.4!») означає: частота вища за 2 МГц, і форма сигналу вже **спотворюється**. Причина апаратна: ЦАП генератора (приблизно 50 млн точок/с) не встигає точно відтворити форму. Частота при цьому точна.
   - Реальні межі за моїми вимірами: прямокутник придатний приблизно до 5 МГц, трикутник 3–5 МГц, півхвиля ~3 МГц, сходинки й повна хвиля впізнавані до 5 МГц. Вище 5 МГц несинусоїдні форми перетворюються на синус або сміття, тому далі межу не піднято.
 - **Звук у режимі діода**: писк, коли показ нижче 0,05 В (замкнені щупи), тим самим звуком, що й у прозвонці. Як і прозвонка, пищить навіть при нульовій гучності, бо це сигнал виміру, а не звук кнопок.
 - **«OL»** без крапки при перевантаженні.
 
-### Що додано в 1.4
+### Що додано в 1.4 (є і в 1.5)
 - **Кнопка Menu в генераторі й мультиметрі.** У заводській прошивці вона працює лише в осцилографі. Тепер з генератора чи мультиметра вона відкриває те саме загальне меню, що й в осцилографі. Раніше для цього треба було спершу вийти «Назад».
 - **Позначка прихованого фільтра.** Коли виміряна частота нижча за 4,19 МГц (2²² Гц), прилад згладжує сигнал (див. «Відомі заводські вади»). Тепер у цьому разі частота виділяється **бурштиновою плашкою з чорними цифрами** у двох місцях: у рядку «Част.» нижнього списку вимірювань і у верхньому полі F.
   - Саме число частоти правильне. Плашка попереджає інше: **форма сигналу на екрані згладжена**, тому фронтам, дзвону й викидам довіряти не можна.
@@ -59,6 +64,17 @@ Unofficial modification of the **FNIRSI 2D15P** firmware: **Ukrainian interface 
   - Позначено лише те, на що фільтр доведено впливає. Лічильники «Фронти»/«Спади» перевірено: під фільтром вони рахують правильно, тому їх не позначено.
   - Колір обрано не випадково: червоний залишено для майбутньої позначки «дані некоректні / межа приладу», а бурштиновий фон з чорними цифрами читається на екрані найкраще.
 - Верхнє поле **F показує частоту каналу-джерела синхронізації** (меню «Синхронізація» → CH1/CH2), а не того каналу, що зараз вибраний. Так у заводській прошивці; фільтр при цьому вирішує для кожного каналу окремо, за його власною частотою.
+
+### Що додано в 1.5
+- **Відносний вимір (REL) у мультиметрі.** **Довге натискання Run** запам'ятовує поточне показання як нуль, і далі прилад показує різницю відносно нього. Повторне довге натискання вимикає режим. Працює для **постійної напруги, опору, діода й ємності**.
+  - Головне застосування: відняти опір щупів (замкніть щупи → довге Run) або власну ємність щупів і проводів.
+  - Опорне значення переживає автоперемикання діапазону. Зміна функції вимикає режим.
+  - Відносним стає лише велике число. Графік і «Макс.»/«Мін.» показують звичайні, абсолютні значення.
+  - **Індикатор — світлодіод біля Run:** червоний, коли режим увімкнено. На сторінці мультиметра цей світлодіод тепер показує саме REL. **HOLD працює як раніше**, його видно на екрані (плашка HOLD), але світлодіод від нього вже не червоніє.
+- **Кнопка Single.** У заводській прошивці вихід з одиночного режиму завжди перемикає запуск на «Авто». Тепер повертається режим, який був до натискання Single («Нормальний» чи «Авто»).
+- **«Макс.» над «Мін.»** у панелі мультиметра.
+- **Батарея:** вимір заряду тепер усереднюється, тож коротке просідання напруги під навантаженням більше не має спричиняти раптового вимкнення. Поріг вимкнення не змінено. Наразі поведінка лише стабілізована. Повне рішення потребує часу, тестів і додаткової інформації, і від неї залежатиме, чи буде другий етап.
+- **Переклад меню «Дисплей»:** «Вигляд сигналу», «Яскрав. сигналу», «Згасання» (було «Післясвічення»), «Стерти». Підписи переносяться між словами, а не посеред слова.
 
 ### Що НЕ змінено
 - **Вимірювання й калібрування** працюють за заводською логікою.
@@ -69,7 +85,7 @@ Unofficial modification of the **FNIRSI 2D15P** firmware: **Ukrainian interface 
 
 1. Завантажте з сайту FNIRSI **офіційну** прошивку V2.7.0.7 і розпакуйте архів. Потрібен файл `2D15P_V2.7.0.7_260826.bin`.
 2. Відкрийте **Rom Patcher JS**: https://www.marcrobledo.com/RomPatcher.js/ (працює в браузері, і на телефоні теж, нічого встановлювати не треба).
-3. У полі «ROM file» оберіть файл прошивки, у полі «Patch file» — патч потрібної версії (`...-1.2.bps`, `...-1.3.bps` або `...-1.4.bps`), натисніть «Apply patch» і збережіть результат.
+3. У полі «ROM file» оберіть файл прошивки, у полі «Patch file» — патч потрібної версії (`...-1.2.bps`, `...-1.3.bps`, `...-1.4.bps` або `...-1.5.bps`), натисніть «Apply patch» і збережіть результат.
    *Альтернатива для комп'ютера: програма Floating IPS (Flips).*
 4. Переконайтеся, що збережений файл називається **точно** `2D15P_V2.7.0.7_260826.bin`. Якщо браузер додав до назви щось своє, перейменуйте. Для перевірки: CRC32 результату — у таблиці вище.
 5. На приладі (заводська англійська версія): кнопка **Menu** → **USB Sharing** → **ON**. Прилад з'явиться на комп'ютері як USB-диск.
@@ -89,7 +105,7 @@ FNIRSI підтвердили: 2D15P випускається в **різних 
 **У ПЛІС (модом не виправити):**
 - **Прихований фільтр нижче 4,19 МГц** (2²² Гц = 4 194 304 Гц). Коли виміряна частота сигналу нижча за поріг, прилад згладжує фронти, дзвін і викиди — так, ніби завжди ввімкнено обмеження смуги 20M. Ручне 20M накладає його вдруге. Частота, шпаруватість і рівні при цьому правильні (амплітуда на ~3 % нижча). FNIRSI підтвердили, що фільтр навмисний і в налаштуваннях не вимикається. Рішення ухвалюється окремо для кожного каналу за його частотою. **На практиці:** для пошуку викидів на ключах чи дзвону на повільних сигналах цьому приладу не довіряйте.
 - **Частотомір помиляється** на похилих фронтах і малій амплітуді: наприклад, сходинки 3 МГц він показує як 181 кГц, повну хвилю 2 МГц — як 57,6 Гц. На чистому прямокутнику він точний. Перевіряйте частоту курсорами. Через це фільтр може вмикатися й на сигналах, справжня частота яких вища за поріг.
-- **Нормальний запуск не тримає осцилограму.** Від звичайного цифрового осцилографа очікують, що в режимі «Нормальний» остання осцилограма лишається на екрані до наступного запуску. Тут вона згасає за налаштуванням «Післясвічення»: з найкоротшим зникає майже одразу, з довшим — поступово тьмяніє, а з «∞» взагалі не стирається, а накопичується. Вимкнути «Післясвічення» не можна (мінімум — Min), тож жодне значення не дає утримання останнього кадру. Вимірювання в стані очікування показують «***». Інструкція (с. 43) каже інакше: «Normal: Refresh waveform only when a trigger event occurs». Виправити це з боку мікроконтролера не можна: осцилограму на екран накладає й гасить ПЛІС, а в режимі «Нормальний» вона не зберігає останній запуск.
+- **Нормальний запуск не тримає осцилограму.** Від звичайного цифрового осцилографа очікують, що в режимі «Нормальний» остання осцилограма лишається на екрані до наступного запуску. Тут вона згасає за налаштуванням «Згасання» (до 1.5 — «Післясвічення»): з найкоротшим зникає майже одразу, з довшим — поступово тьмяніє, а з «∞» взагалі не стирається, а накопичується. Вимкнути «Згасання» не можна (мінімум — Min), тож жодне значення не дає утримання останнього кадру. Вимірювання в стані очікування показують «***». Інструкція (с. 43) каже інакше: «Normal: Refresh waveform only when a trigger event occurs». Виправити це з боку мікроконтролера не можна: осцилограму на екран накладає й гасить ПЛІС, а в режимі «Нормальний» вона не зберігає останній запуск.
 
 **Осцилограф:**
 - **Глибина пам'яті (10K / 100K / 1M) не дає видимої різниці.** Це помітили й інші власники на форумі EEVblog. Прошивка мікроконтролера передає вибрану глибину в ПЛІС; що ПЛІС з нею робить — невідомо. Напис частоти дискретизації («…Sa/s») від глибини не залежить взагалі, тож за ним судити про глибину не можна. Тест 22.10.2026 на офіційній V2.7.0.7 (імпульс близько 1 мкс, 9,7 кГц, 10 мс/под): живий екран і зупинений розтягнутий кадр однакові для 10K і 1M, на 100 мкс/под в обох випадках губиться більшість імпульсів. Дані осцилограми прилад не зберігає (лише знімки екрана), тож скористатися глибиною користувач ніде не може.
@@ -101,7 +117,9 @@ FNIRSI підтвердили: 2D15P випускається в **різних 
 
 **Мультиметр (у 1.2):** немає звуку в режимі діода; перевантаження показується як «.OL».
 
-**Керування (у 1.2 і 1.3):** кнопка Menu працює лише в осцилографі.
+**Керування (у 1.2 і 1.3):** кнопка Menu працює лише в осцилографі. **(у 1.2–1.4):** вихід з режиму Single завжди вмикає «Авто».
+
+**Батарея (у 1.2–1.4):** одне коротке просідання напруги нижче 3,68 В під навантаженням прилад запам'ятовує як 5% і вимикається, навіть якщо значок щойно показував дві поділки.
 
 **Інше:**
 - «Trig'd», «Stop», «Roll» та інші стани в рядку стану англійською в обох мовах (свідомо не перекладено: це загальноприйняті терміни).
@@ -123,20 +141,25 @@ FNIRSI підтвердили: 2D15P випускається в **різних 
 > The patch checks the checksum and **will refuse** any other version. Do not try to bypass this: the changes target exact addresses of this version, and on other firmware the device may fail to boot.
 
 ### Which version
-| | **1.2** | **1.3** | **1.4** |
-|---|---|---|---|
-| Ukrainian language and corrected English | ✓ | ✓ | ✓ |
-| Generator: non-sine waveforms up to **5 MHz** (stock limit 2 MHz) | — | ✓ | ✓ |
-| Beep in diode mode | — | ✓ | ✓ |
-| "OL" instead of ".OL" | — | ✓ | ✓ |
-| **Menu** key works in the generator and multimeter | — | — | ✓ |
-| Hidden-filter marker (frequency below 4.19 MHz) | — | — | ✓ |
-| Patch file | `2D15P_V2.7.0.7_UA-mod-1.2.bps` | `2D15P_V2.7.0.7_UA-mod-1.3.bps` | `2D15P_V2.7.0.7_UA-mod-1.4.bps` |
-| Result CRC32 | `3DD5A6F0` | `CA67F6A9` | `BA028F8D` |
+| | **1.2** | **1.3** | **1.4** | **1.5** |
+|---|---|---|---|---|
+| Ukrainian language and corrected English | ✓ | ✓ | ✓ | ✓ |
+| Generator: non-sine waveforms up to **5 MHz** (stock limit 2 MHz) | — | ✓ | ✓ | ✓ |
+| Beep in diode mode | — | ✓ | ✓ | ✓ |
+| "OL" instead of ".OL" | — | ✓ | ✓ | ✓ |
+| **Menu** key works in the generator and multimeter | — | — | ✓ | ✓ |
+| Hidden-filter marker (frequency below 4.19 MHz) | — | — | ✓ | ✓ |
+| Relative measurement (REL) in the multimeter | — | — | — | ✓ |
+| **Single** key restores the previous trigger mode | — | — | — | ✓ |
+| Multimeter: "Max" above "Min" | — | — | — | ✓ |
+| Battery: no sudden shutdowns from voltage dips | — | — | — | ✓ |
+| Patch file | `2D15P_V2.7.0.7_UA-mod-1.2.bps` | `2D15P_V2.7.0.7_UA-mod-1.3.bps` | `2D15P_V2.7.0.7_UA-mod-1.4.bps` | `2D15P_V2.7.0.7_UA-mod-1.5.bps` |
+| Result CRC32 | `3DD5A6F0` | `CA67F6A9` | `BA028F8D` | `5CF4B48D` |
 
 - **1.2** — translation only, device logic is stock. This version is frozen: it will change only for a critical translation bug.
 - **1.3** — translation plus fixes that change device behavior (generator, multimeter).
 - **1.4** — everything in 1.3, plus easier navigation (Menu) and an honest marker when the scope smooths the signal.
+- **1.5** — everything in 1.4, plus relative measurement in the multimeter, the Single key fix, a more stable battery reading and translation fixes.
 - Older versions stay available: new releases come out alongside them, not instead of them. Pick the one you need.
 - **All patches apply to the stock V2.7.0.7**, not on top of each other. Do not apply a newer version over an already patched older one.
 
@@ -153,16 +176,16 @@ FNIRSI підтвердили: 2D15P випускається в **різних 
 - **Cyrillic in all six device fonts**, matched to the stock Latin height and weight (Fixel typeface).
 - **Corrected English**, e.g. "Level" → "Horizontal", "Ramp" → "Triangle", "Skew" → "Offset", "Regarding" → "About", "Auto Shut" → "Auto Off", "2.bmpSaving..." → "2.bmp saving...".
 - **Three-row top menu**: full labels fit and no longer cover the submenu; touch zones enlarged.
-- About page shows the mod version, e.g. "Version (UA mod 1.4)".
+- About page shows the mod version, e.g. "Version (UA mod 1.5)".
 
-### New in 1.3 (also in 1.4)
+### New in 1.3 (also in 1.4, 1.5)
 - **Generator up to 5 MHz** for all waveforms except sine (sine stays at 10 MHz). The stock firmware silently limits non-sine waveforms to 2 MHz.
   - **Orange frequency with "!"** (e.g. "4.4!") means: the frequency is above 2 MHz and the waveform shape is **distorted**. The reason is hardware: the generator DAC (about 50 MSa/s) cannot reproduce the shape exactly. The frequency itself is accurate.
   - Usable limits from my measurements: square up to about 5 MHz, triangle 3–5 MHz, half wave ~3 MHz, staircase and full wave recognizable up to 5 MHz. Above 5 MHz non-sine waveforms turn into a sine or garbage, so the limit is not raised further.
 - **Beep in diode mode** when the reading is below 0.05 V (shorted probes), with the same sound as continuity. Like continuity, it beeps even at zero volume, because it is a measurement signal, not a key click.
 - **"OL"** without the dot on overload.
 
-### New in 1.4
+### New in 1.4 (also in 1.5)
 - **Menu key in the generator and multimeter.** In the stock firmware it only works in the scope. Now, from the generator or multimeter, it opens the same general menu as in the scope. Before, you had to press Back first.
 - **Hidden-filter marker.** When the measured frequency is below 4.19 MHz (2²² Hz), the scope smooths the signal (see "Known stock issues"). In that case the frequency is now highlighted with an **amber plate and black digits** in two places: the "Freq" row of the measurement list and the top F field.
   - The frequency value itself is correct. The plate warns about something else: **the waveform on screen is smoothed**, so edges, ringing and overshoot cannot be trusted.
@@ -171,13 +194,24 @@ FNIRSI підтвердили: 2D15P випускається в **різних 
   - The colour is deliberate: red is reserved for a future "invalid data / device limit" marker, and amber with black digits reads best on this screen.
 - The top **F field shows the frequency of the trigger source channel** (Trigger menu → CH1/CH2), not of the currently selected channel. This is stock behavior; the filter itself decides per channel, from that channel's own frequency.
 
+### New in 1.5
+- **Relative measurement (REL) in the multimeter.** **Long press Run** stores the current reading as zero, and the display then shows the difference from it. Another long press turns it off. Works for **DC voltage, resistance, diode and capacitance**.
+  - Main use: subtract the probe resistance (short the probes → long Run), or the stray capacitance of probes and leads.
+  - The reference survives auto-ranging. Changing the function turns REL off.
+  - Only the large reading becomes relative. The graph and "Max"/"Min" keep showing normal, absolute values.
+  - **Indicator: the LED next to Run** is red while REL is on. On the multimeter page this LED now shows REL. **HOLD works as before** and is shown on screen (HOLD plate), but it no longer turns the LED red.
+- **Single key.** In the stock firmware, leaving Single mode always switches the trigger to Auto. Now the mode that was active before Single (Normal or Auto) is restored.
+- **"Max" above "Min"** in the multimeter panel.
+- **Battery:** the charge reading is now averaged, so a short voltage dip under load should no longer cause a sudden shutdown. The shutdown threshold is unchanged. For now the behaviour is only stabilised. A complete solution needs time, tests and more information, and whether a second stage follows depends on it.
+- **Ukrainian Display menu:** clearer labels; line breaks now fall between words.
+
 ### What's NOT changed
 Measurement and calibration logic are stock. FPGA issues (below) cannot be fixed from the MCU side.
 
 ### Installation
 1. Download the **official** V2.7.0.7 firmware from FNIRSI and unzip it (`2D15P_V2.7.0.7_260826.bin`).
 2. Open **Rom Patcher JS**: https://www.marcrobledo.com/RomPatcher.js/ (runs in the browser, phones included). Alternative: Floating IPS (Flips).
-3. Select the firmware as "ROM file" and the patch of your chosen version (`...-1.2.bps`, `...-1.3.bps` or `...-1.4.bps`) as "Patch file", click "Apply patch", save the result.
+3. Select the firmware as "ROM file" and the patch of your chosen version (`...-1.2.bps`, `...-1.3.bps`, `...-1.4.bps` or `...-1.5.bps`) as "Patch file", click "Apply patch", save the result.
 4. Make sure the result is named **exactly** `2D15P_V2.7.0.7_260826.bin` (CRC32 in the table above).
 5. On the device: **Menu** button → **USB Sharing** → **ON**, copy the file into the **`Upgrade file`** folder, power cycle.
 6. **Settings → Language → «Українська»** (or keep English).
@@ -204,7 +238,9 @@ FNIRSI confirmed that the 2D15P exists in **different hardware versions** and th
 
 **Multimeter (in 1.2):** no beep in diode mode; overload shown as ".OL".
 
-**Controls (in 1.2 and 1.3):** the Menu key only works in the scope.
+**Controls (in 1.2 and 1.3):** the Menu key only works in the scope. **(in 1.2–1.4):** leaving Single mode always switches to Auto.
+
+**Battery (in 1.2–1.4):** a single short voltage dip below 3.68 V under load is stored as 5% and the device shuts down, even if the icon showed two bars a moment before.
 
 **Other:** "Trig'd", "Stop", "Roll" and other status-bar states remain English in both languages (kept on purpose: these are standard terms).
 
@@ -220,6 +256,7 @@ Tested on one unit. Use at your own risk. Not affiliated with FNIRSI. Please rep
 ---
 
 ## Історія версій / Changelog
+- **1.5** — відносний вимір (REL) у мультиметрі: довге натискання Run, індикатор — світлодіод біля Run; Single повертає попередній режим запуску; «Макс.» над «Мін.»; усереднення виміру батареї проти раптових вимкнень; переклад меню «Дисплей» («Згасання» замість «Післясвічення»). / Relative measurement (REL) in the multimeter: long press Run, the LED next to Run is the indicator; Single restores the previous trigger mode; "Max" above "Min"; averaged battery reading against sudden shutdowns; Ukrainian Display menu labels.
 - **1.4** — кнопка Menu в генераторі й мультиметрі; бурштинова плашка на частоті, коли діє прихований фільтр (нижче 4,19 МГц), у списку вимірювань і в полі F; до відомих вад додано нормальний запуск («Післясвічення») і глибину пам'яті. / Menu key in the generator and multimeter; amber plate on the frequency while the hidden filter is active (below 4.19 MHz), in the measurement list and the F field; Normal trigger ("Afterglow") and memory depth added to known issues.
 - **1.3** — генератор до 5 МГц для несинусоїдних форм з позначкою понад 2 МГц (помаранчевий колір і «!»); звук у режимі діода; «OL» замість «.OL»; оновлено опис заводських вад. / Generator up to 5 MHz for non-sine waveforms with a marker above 2 MHz (orange and "!"); beep in diode mode; "OL" instead of ".OL"; stock issues section updated.
 - **1.2** — виправлено екранну клавіатуру генератора в режимі «Прямокутник»: довгий підпис «Заповнення» зсував її за лівий край екрана, і вона закривалася від будь-якого натискання. Підпис скорочено до «Запов.». / Fixed the generator keypad in Square mode: the long Ukrainian «Duty» label pushed it past the left screen edge, so any tap closed it. The label is shortened.
@@ -240,4 +277,4 @@ Tested on one unit. Use at your own risk. Not affiliated with FNIRSI. Please rep
 
 ## Дивіться також / See also
 - [Тема 2D15P на форумі EEVblog](https://www.eevblog.com/forum/testgear/new-handheld-dsodmm-fnirsi-2d15p-100mhz500msps-(september-2025)/) — обговорення приладу, подробиці тестів і фото. / [2D15P thread on the EEVblog forum](https://www.eevblog.com/forum/testgear/new-handheld-dsodmm-fnirsi-2d15p-100mhz500msps-(september-2025)/) — discussion of the device, test details and photos.
-- [giray/fnirsi-2d15p-mod](https://github.com/giray/fnirsi-2d15p-mod) — інший мод 2D15P: запуск одразу в мультиметр, турецька / німецька / нідерландська мови. Звідти ж ідея кнопки Menu поза осцилографом (у 1.4 реалізовано власним кодом). / Another 2D15P mod: boots into the multimeter, Turkish / German / Dutch UI. The idea of the Menu key outside the scope also comes from there (implemented in 1.4 with my own code).
+- [giray/fnirsi-2d15p-mod](https://github.com/giray/fnirsi-2d15p-mod) — інший мод 2D15P: запуск одразу в мультиметр, турецька / німецька / нідерландська мови. Звідти ж ідея кнопки Menu поза осцилографом (у 1.4) і відносного виміру REL разом з частиною карти кнопок і полів мультиметра (у 1.5); обидва реалізовано власним кодом. / Another 2D15P mod: boots into the multimeter, Turkish / German / Dutch UI. The ideas of the Menu key outside the scope (1.4) and of relative measurement (REL), with part of the key and multimeter field map (1.5), also come from there; both implemented with my own code.
