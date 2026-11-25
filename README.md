@@ -50,9 +50,10 @@ The project is alive, but new releases will come out more slowly. The quick chan
 So a long pause between versions does not mean the project is abandoned — I keep working on it as time, resources and the complexity of each task allow.
 
 I collect ideas and requests everywhere: Issues, forums and chats. I read everything, but what to implement and when is my decision, based on usefulness and complexity.
+
 I do not accept money donations. If you want to help the project with test equipment, contact me. A specific feature can also be moved up: for a fee I will put other tasks aside and do it sooner. You pay for my time, not for exclusivity — the feature will still be published in this repository for everyone under GPL-3.0.
 
-**Contact:** questions, requests and bug reports — via the Issues tab. Equipment for testing or a paid feature — by e-mail: `axonixdev.contact [at] gmail [dot] com`.
+**Contact:** questions, requests and bug reports — via the Issues tab. Equipment for testing or a paid feature — by e-mail: [axonixdev.contact@gmail.com](mailto:axonixdev.contact@gmail.com).
 
 ### What's done (all versions)
 | | |
@@ -209,9 +210,10 @@ Tested on one unit. Use at your own risk. Not affiliated with FNIRSI. Please rep
 Тож довга пауза між версіями не означає, що проєкт закинуто: я працюю над ним у міру часу, можливостей і складності кожної задачі.
 
 Ідеї та побажання я збираю звідусіль: з Issues, форумів і чатів. Читаю все, але що і коли впроваджувати, вирішую сам, оцінивши користь і складність.
+
 Грошових пожертв я не приймаю. Якщо хочете допомогти проєкту обладнанням для тестів, напишіть мені. Окрему функцію можна й прискорити: за оплату я відкладу інші задачі й зроблю її раніше. Це оплата за мій час, а не за ексклюзивність: функція все одно з'явиться в репозиторії для всіх на умовах GPL-3.0.
 
-**Зв'язок:** питання, побажання й повідомлення про помилки — через розділ Issues. Щодо обладнання для тестів або оплачуваної функції — на пошту `axonixdev.contact [at] gmail [dot] com`.
+**Зв'язок:** питання, побажання й повідомлення про помилки — через розділ Issues. Щодо обладнання для тестів або оплачуваної функції — на пошту [axonixdev.contact@gmail.com](mailto:axonixdev.contact@gmail.com).
 
 ### Що зроблено (усі версії)
 | | |
